@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: CardManagement
+  profiles:
+    active: prod

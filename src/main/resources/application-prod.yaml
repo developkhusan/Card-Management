@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-d2ilvdre5dus73b6hoh0-a.oregon-postgres.render.com/card_app
+    username: card_user
+    password: ILqP8Pn8beNbLZk1AnRQcffWQ5o0RcjI
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.40.3.69:8761/eureka
