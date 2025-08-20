@@ -10,3 +10,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.40.3.69:8761/eureka
+server:
+  servlet:
+    context-path: /card

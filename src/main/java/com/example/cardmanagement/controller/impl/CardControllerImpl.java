@@ -22,8 +22,8 @@ private ResponseMessage responseMessage;
     }
 
     @Override
-    public ResponseEntity<?> updateCard(String card_number, String last_pin, String new_pin, Double balance, Boolean active) {
-        ResponseMessage responseMessage = cardService.updateCard(card_number, last_pin, new_pin, balance, active);
+    public ResponseEntity<?> updateCard(String last_pin, String new_pin, Double balance, Boolean active) {
+        ResponseMessage responseMessage = cardService.updateCard(last_pin, new_pin, balance, active);
         return ResponseEntity.status(responseMessage.getStatus() ? HttpStatus.OK : HttpStatus.BAD_REQUEST).body(responseMessage);
     }
 

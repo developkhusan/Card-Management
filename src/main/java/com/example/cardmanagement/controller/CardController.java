@@ -14,7 +14,7 @@ public interface CardController {
     ResponseEntity<?> createCard(@RequestBody CardRequestDTO cardRequestDTO);
 
     @PutMapping("/update")
-    ResponseEntity<?> updateCard(@RequestParam String card_number,  @RequestParam String last_pin, @RequestParam String new_pin,@RequestParam Double balance,@RequestParam Boolean active);
+    ResponseEntity<?> updateCard(@RequestParam String last_pin, @RequestParam String new_pin,@RequestParam Double balance,@RequestParam Boolean active);
 
     @DeleteMapping("/delete")
     ResponseEntity<?> deleteCard(@RequestParam String card_number);
